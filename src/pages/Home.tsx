@@ -51,15 +51,10 @@ export const Home = () => {
       </section>
       <section>
         {/* //data-testid={`post${post.id}`} */}
-        <div  className='flex flex-col gap-10 max-w-[900px] w-full mx-auto py-8 px-5 divide-y divide-gray-300'>
+        <div className='flex flex-col gap-10 max-w-[900px] w-full mx-auto py-8 px-5 divide-y divide-gray-300'>
           {currentItems.map((post) => (
             <NavLink data-testid={`hell`} to={`/post/${post.id}`} key={post.id}>
-              <div  className='flex flex-col items-start justify-center gap-4'>
-                <h2 className='text-yellow-400 text-2xl font-semibold'>
-                  {post.title}
-                </h2>
-                <p className='text-gray-200 text-xl'>{post.body}</p>
-              </div>
+              <CardPost title={post.title} body={post.body} />
             </NavLink>
           ))}
         </div>
