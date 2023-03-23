@@ -43,7 +43,7 @@ Technologies used in the project
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/ganimedes96/-technical-test && cd -technical-test
+$ git clone https://github.com/ganimedes96/technical-test && cd technical-test
 ```
 
 **Follow the steps below to install the required dependencies**
@@ -63,7 +63,7 @@ $ npm run dev
 
 ```bash
 # Clone your fork
-$ git clone your-fork-url && cd -technical-test
+$ git clone your-fork-url && cd technical-test
 
 # Create a branch with your feature
 $ git checkout -b feature
