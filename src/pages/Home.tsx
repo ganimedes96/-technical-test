@@ -53,7 +53,7 @@ export const Home = () => {
         {/* //data-testid={`post${post.id}`} */}
         <div className='flex flex-col gap-10 max-w-[900px] w-full mx-auto py-8 px-5 divide-y divide-gray-300'>
           {currentItems.map((post) => (
-            <NavLink data-testid={`hell`} to={`/post/${post.id}`} key={post.id}>
+            <NavLink to={`/post/${post.id}`} key={post.id}>
               <CardPost title={post.title} body={post.body} />
             </NavLink>
           ))}
