@@ -16,12 +16,16 @@ export const Users = () => {
   }, []);
 
   if (!users) {
-  return <div>Loading...</div>
-}
+    return <div>Loading...</div>
+  }
 
   return (
     <>
-      <h2 className='text-gray-200 text-2xl font-semibold'>User list:</h2>
+      <div className="flex items-center justify-center gap-4 text-gray-200 my-16">
+        <div className="w-48 h-px bg-gray-300" />
+        <h2 className="text-2xl text-center ">List Users</h2>
+        <div className="w-48 h-px bg-gray-300" />
+      </div>
       <div className='flex flex-wrap gap-8  justify-center items-center mt-6'>
         {users.map((user) => (
           <CardUser

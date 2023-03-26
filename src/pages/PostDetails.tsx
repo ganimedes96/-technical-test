@@ -9,8 +9,8 @@ export const PostDetails = () => {
   const { id } = useParams();
   const [post, setPost] = useState<PostProps>();
   const [comments, setComments] = useState<CommentsProps[]>([]);
-  
-const fetchPost = async () => {
+
+  const fetchPost = async () => {
     const response = await api.get(`/posts/${id}`);
     setPost(response.data);
   };
@@ -18,9 +18,7 @@ const fetchPost = async () => {
   const fetchComments = async () => {
     const response = await api.get(`/posts/${id}/comments`)
     setComments(response.data)
-    console.log(response.data);
-        
-}  
+  }
 
   useEffect(() => {
     fetchPost();
@@ -39,10 +37,15 @@ const fetchPost = async () => {
         </div>
       </section>
       <section className='mt-10'>
-        <h2 className='text-gray-200 my-5 text-2xl font-semibold'>Comments</h2>          
+        <div className="flex items-center justify-center gap-4 text-gray-200 my-16">
+          <div className="w-48 h-px bg-gray-300" />
+          <h2 className="text-2xl text-center ">Comments</h2>
+          <div className="w-48 h-px bg-gray-300" />
+        </div>
         <div className='flex flex-col items-center justify-center gap-4'>
-{comments.map((comment) => (
+          {comments.map((comment) => (
             <CardComment
+              testId={comment.id}    
               id={comment.id}
               name={comment.name}
               email={comment.email}

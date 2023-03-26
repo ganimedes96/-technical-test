@@ -1,9 +1,10 @@
 import { User } from 'phosphor-react';
 import { CommentsProps } from '../@types/IComments';
 
-export const CardComment = ({ name, email, body, id }: CommentsProps) => {
+export const CardComment = ({ name, email, body, id, testId }: CommentsProps) => {
   return (
     <div
+      data-testid={`comment${testId}`}
       className='flex items-center justify-center w-full gap-5 text-gray-200 bg-gray-600 p-2 rounded'
       key={id}>
       <div className='bg-gray-400 rounded-full p-4'>

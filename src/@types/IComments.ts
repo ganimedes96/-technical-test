@@ -3,4 +3,5 @@ export interface CommentsProps {
     name: string
     email: string
     body: string
+    testId: string    
 }

@@ -5,6 +5,7 @@ import { UserProps } from '../@types/IUser';
 export const CardUser = ({ id, username, name, email }: UserProps) => {
   return (
     <div
+      data-testid={`user${id}`}
       key={id}
       className='flex flex-col w-[250px] p-2 bg-gray-500 rounded border-t-4 border-sky-500 text-gray-200 items-center justify-center gap-4'>
       <div>
