@@ -1,6 +1,4 @@
 import '@testing-library/jest-dom'
-import { setupServer } from 'msw/node'
-import { rest } from 'msw'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { BrowserRouter, NavLink } from 'react-router-dom'
 import { Header } from '../components/Header'

@@ -40,8 +40,8 @@ export const Home = () => {
     <>
       <section className='flex items-start justify-around my-10'>
         <div className='text-gray-200 flex flex-col items-start justify-center gap-5'>
-          <h3 className='font-semibold text-2xl'>Hey, Welcome</h3>
-          <h1 className='font-bold text-6xl'>
+          <h3 className='font-semibold md:text-2xl text-xl'>Hey, Welcome</h3>
+          <h1 className='font-bold  text-4xl md:text-6xl'>
             News about the <span className='text-blue-400'>Dev</span> World
           </h1>
         </div>
