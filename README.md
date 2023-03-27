@@ -35,6 +35,7 @@ Technologies used in the project
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCss](https://tailwindcss.com)
 - [axios](https://axios-http.com/docs/intro)
+- [vitest](https://vitest.dev/)
 
 # 💻 Getting started
 
