@@ -50,7 +50,6 @@ export const Home = () => {
         </div>
       </section>
       <section>
-        {/* //data-testid={`post${post.id}`} */}
         <div className='flex flex-col gap-10 max-w-[900px] w-full mx-auto py-8 px-5 divide-y divide-gray-300'>
           {currentItems.map((post) => (
             <NavLink to={`/post/${post.id}`} key={post.id} data-testid={`link${post.id}`}>
